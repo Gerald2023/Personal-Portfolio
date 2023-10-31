@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  
+    <script src="./javascript.js" defer></script>
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./javascript.js" defer></script>
 </head>
 
 <body>
@@ -39,6 +45,12 @@
 
 
     <main>
+        <div class = "backgroundContainer">
+            <video id = "background" muted autoplay loop> 
+                <source src = "./videos/cozy_house.mp4" type = "video/mp4"></src>
+            </video>
+    
+        </div>
         <section id="hero-container">
             <div class="welcome-title">
                 <h1>Hi! I'm Gerald</h1>
@@ -48,18 +60,93 @@
 
             </div> -->
         </section>
-        <section id="about">
-            <div class="welcome-title2">
-                <h1>about</h1>
+        <section id="about" class="bg-light py-5">
+            <div class="container margin-top-class">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2>About Me</h2>
+                        <p>
+                            Welcome to my portfolio! I'm a passionate programmer dedicated to creating
+                            elegant and efficient solutions. With a background in [Your Field], I
+                            specialize in [Your Specializations]. I love turning complex problems into
+                            simple, beautiful, and intuitive designs. Let's work together to bring your
+                            ideas to life.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./images/me.jpeg" alt="Your Name" class="img-fluid rounded-circle">
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="projects">
-            <div class="">
-                <h1>about</h1>
+        
+        <section id="projects" class="bg-info py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="./images/calculator.png" class="card-img-top" alt="calculator">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="./images/calculator.png" class="card-img-top" alt="calculator">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="./images/calculator.png" class="card-img-top" alt="calculator">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="./images/calculator.png" class="card-img-top" alt="calculator">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Repeat the above 'col' div for each card you want to display -->
+                </div>
             </div>
         </section>
+
+        <!-- <section id="backgroundvideo2">
+            <video src="./images/tech_background.mp4" muted autoplay loop></video>
+            <div class="main-text">
+              <h2>Let's go for a walk...</h2>
+              <h1>...On the Moon</h1>
+              <p>
+                This demo shows a video background with no overlay.
+              </p>
+              <a href="#" class="btn">Let's go!</a>
+            </div>
+
+        </section> -->
+        
+            
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 
