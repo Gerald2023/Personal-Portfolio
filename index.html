@@ -20,8 +20,8 @@
 
 <body>
 
-    <header>
-        <div class="navbar"> <!-- This will serve as a flex container-->
+    <header class="reset-this">
+        <div class="navbar-custom"> <!-- This will serve as a flex container-->
             <div class="logo"><a href="#">Gerald Vallejos</a></div>
             <ul class="links">
                 <li><a href="#hero-container">Home</a></li>
@@ -53,14 +53,13 @@
         </div>
         <section id="hero-container">
             <div class="welcome-title">
-                <h1>Hi! I'm Gerald</h1>
+                <div id="demoFont">Hello World!</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I'm Gerald</div>
             </div>
-            <!-- <div class="myPhoto">
-                <img src="./images/me.jpeg" alt="I'm Gerald" width="250">
-
-            </div> -->
         </section>
-        <section id="about" class="bg-light py-5">
+        
+        
+        <section id="about" class="bg-dark py-5">
             <div class="container margin-top-class">
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -80,8 +79,10 @@
             </div>
         </section>
         
-        <section id="projects" class="bg-info py-5">
-            <div class="container">
+        <section id="projects">
+            <div>
+                <h1>These are my projects</h1>
+            <div class="d-flex justify-content-center justify-items-center">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                         <div class="card">
@@ -127,6 +128,10 @@
         
                     <!-- Repeat the above 'col' div for each card you want to display -->
                 </div>
+            
+            
+            
+            </div>
             </div>
         </section>
 
@@ -142,7 +147,31 @@
             </div>
 
         </section> -->
-        
+
+        <section id="contact" class="contact-section">
+            <div class="contact-form-container">
+                <h2>Contact Me</h2>
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mknlenvn" method="post">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Your message" required=""></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+             
             
     </main>
 

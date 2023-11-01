@@ -1,19 +1,11 @@
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* tells the browser to account for any border and padding in the values you specify*/
-    font-family: 'Open Sans', sans-serif;
+    max-width: 100%; /*make the view to fix in all devices*/
 }
 
-/* body {
-
-    height: 100vh;
-    background-color: #000;
-    background-image: url('./images/1218911.jpg');
-    background-size: cover;
-    background-position: center;
-} */
 
 #background{
     position: fixed;
@@ -27,8 +19,7 @@
 
 }
 
-
-
+/*Start of the navigation bar style*/
 
 li {
     list-style: none;
@@ -48,7 +39,6 @@ header {
     /* position: relative; */
     padding: 0 2rem;
     background-color: antiquewhite;
-
     position: fixed;
     /* Fix the header to the top */
     top: 0;
@@ -56,18 +46,14 @@ header {
     width: 100%;
     /* Take the full width of the viewport */
     height: 60px;
-    /* Adjust the height as needed */
     background-color: rgba(0, 0, 0, 0.8);
-    /* Add background color with some transparency */
     padding: 0 2rem;
     z-index: 1;
-    /* Ensure it's above other content */
-
 }
 
 
 
-.navbar {
+.navbar-custom {
     width: 100%;
     height: 60px;
     max-width: 1200px;
@@ -81,18 +67,19 @@ header {
 }
 
 
-.navbar .log a {
+.navbar-custom .log a {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.navbar .links {
+.navbar-custom .links {
     display: flex;
     gap: 2rem;
     color: #fff;
+    margin-bottom: 0;
 }
 
-.navbar .toggle_btn {
+.navbar-custom .toggle_btn {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
@@ -158,12 +145,12 @@ header {
 /*Responsive nav bar design*/
 @media(max-width: 992px) {
 
-    .navbar .links,
-    .navbar .action_btn {
+    .navbar-custom .links,
+    .navbar-custom .action_btn {
         display: none;
     }
 
-    .navbar .toggle_btn {
+    .navbar-custom .toggle_btn {
         display: block;
     }
 
@@ -173,6 +160,9 @@ header {
         align-items: center;
     }
 }
+
+/*End of navigation bar style*/
+
 
 #hero-container {
 
@@ -185,6 +175,7 @@ header {
     background-color: rgba(5, 5, 5, 0.2);
     min-height: 100vh;
     padding-top: 30px;
+    
 
 
 
@@ -193,12 +184,36 @@ header {
 .welcome-title {
     margin-top: 60px;
     color: #ffffff;
-    font-size: small;
+font-family: "Lucida Console", Monaco, monospace;
+font-size: 60px;
+letter-spacing: 2px;
+word-spacing: 0px;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
 
     
 
 }
 
+
+  
+  .welcome-title {
+    opacity: 0; /* Initial opacity to hide the content */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply the fadeIn animation */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1; /* At the end of the animation, make it fully visible */
+    }
+  }
+  
 
 .margin-top-class{
 
@@ -207,23 +222,29 @@ header {
 
 #projects {
     display: flex;
-    display: flex;
     justify-content: center;
-
-
-
-    background-color: rgb(241, 91, 238);
-    min-height: 65vh;
-
+    align-items: center;
+    min-height: 100vh;
+  
 }
 
+#projects{
 
-/* .container {
+    background-color: #9DB2BF;
+
+}
+#projects .d-flex{
+ 
+    /* display: flex;
+    justify-content: center;
+    min-height: 65vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-} */
+    border: solid 1px red;
+
+}
+
 
 .card {
     width: 18rem;
@@ -237,20 +258,92 @@ header {
     background-color: #0056b3;
 }
 
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    min-height: 65vh;
+}
 
-#backgroundvideo2{
-    /*position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; */
+#about{
 
-    position: absolute;
+ background-color: black;
+ color: white;
+
+}
+
+
+/*------------------*/
+
+/* Style for the contact section */
+.contact-section {
+    background-color: #222;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Style for the contact form container */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(7, 139, 135);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Style for form labels and inputs */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-    filter: brightness(1.2);
-    z-index: -2; 
-  } 
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Style for the submit button */
+.submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .contact-form-container {
+        max-width: 90%;
+    }
+}
+
+
+
