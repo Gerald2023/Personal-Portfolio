@@ -363,3 +363,10 @@ textarea:focus {
         max-width: 90%;
     }
 }
+
+footer {
+    background-color: #45c5ce;
+    color: #1f1c1c;
+    text-align: center;
+    padding: 20px 0;
+}
