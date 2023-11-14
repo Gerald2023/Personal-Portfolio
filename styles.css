@@ -305,7 +305,8 @@ header {
 
 /* Style for the contact form container */
 .contact-form-container {
-    max-width: 600px;
+    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
     background-color: rgb(7, 139, 135);
     padding: 20px;
@@ -313,10 +314,10 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
+
+
 /* Style for form labels and inputs */
-.form-group {
-    margin-bottom: 15px;
-}
+
 
 label {
     display: block;
@@ -369,4 +370,18 @@ footer {
     color: #1f1c1c;
     text-align: center;
     padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links{
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
 }
